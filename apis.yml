@@ -1,8 +1,28 @@
 aid: rfmd
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rfmd.png
 name: Rfmd
-description: 'Rfmd is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'RFMD (RF Micro Devices) was a semiconductor manufacturer of radio-frequency
+  (RF) components for mobile, infrastructure, defense, and aerospace markets. In January
+  2015 RFMD merged with TriQuint Semiconductor to form Qorvo, and the rfmd.com domain
+  now redirects to qorvo.com. Qorvo designs and manufactures RF and power solutions
+  — amplifiers, filters, integrated circuits, wireless connectivity, and power management
+  devices — spanning mobile, defense/aerospace, network infrastructure, IoT, automotive,
+  and consumer electronics. As a hardware semiconductor company, RFMD/Qorvo publishes
+  no public developer web API; its developer-facing resources are simulation models,
+  QSPICE circuit-simulation software, datasheets, evaluation boards, and a technical
+  support forum. This profile was surfaced as a portfolio lead of norwest-venture-partners
+  and enriched to reflect the RFMD-to-Qorvo identity; there is no API surface to catalog.'
 url: https://raw.githubusercontent.com/api-evangelist/rfmd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +32,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Unknown
+- Semiconductors
+- RF
+- Radio Frequency
+- Hardware
+- Electronics
+- Wireless
+- Power Management
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/rfmd-domain-security.yml
 - type: Website
-  url: https://rfmd.com
+  url: https://www.qorvo.com
+- type: DeveloperPortal
+  url: https://www.qorvo.com/design-hub
